@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Ex Fixacao</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <h1>Exercicio de Fixacao</h1>
+        <fieldset>
+            <legend>Questão 1</legend>
+            <p>Crie uma página que imprima uma tabela de conversão Celsius Fahrenheit entre – 40 e 100 graus
+Celsius com incrementos de 10 em 10. A fórmula para conversão é F = (9/5)*C + 32. Altere-o
+de forma que a tela apresente um campo numérico para a entrada de um valor em Celsius em um
+formulário que envie dados utilizando o método POST.</p>
+            <div class="questa">
+                <form action="Resposta" method="GET">
+                    <input type="text" name="quest" value="1"  style="display:none" readonly>
+                    <input type="submit" value="ok">
+                </form>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Questão 2</legend>
+            <p>Implementar uma página que apresente a tabuada. Dois campos numéricos serão criados em
+                HTML, um para representar o início e outro o fim da tabuada. Abaixo dos campos será apresentada
+                uma tabela com a tabuada dos números informados.</p>
+            <div class="questao">
+                <form action="Resposta" method="GET">
+                    <label>Numero 1: </label><br /> 
+                    <input type="number" name="num1" required ><br/><br/>
+                    <label>Numero 2: </label><br />
+                    <input type="number" name="num2" required><br/><br/>
+                    <input type="text" name="quest" value="2"  style="display:none" readonly>
+                    <input type="submit" value="ok">
+                </form>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Questão 3</legend>
+            <pre>Criar uma página com um campo de texto onde o usuário digitará um inteiro. Ao submeter a
+página, o servidor informará se o inteiro:
+    (a) É par ou impar.
+    (b) É positivo ou negativo.
+    (c) É maior ou menor que 10.
+    (d) É primo ou não.
+    (e) Se é triangular ou não.
+    (f) Se é perfeito ou não.
+    (g) Se é um ano bissexto ou não.
+    (h) Calcular o fatorial.
+    (i) Calcular o fibonacci.
+Realizar validação do valor digitado pelo usuário em JavaScript antes da submissão ao servidor.
+Verificar se o usuário digitou alguma coisa e se o que ele digitou é um inteiro ou não. Caso tenha
+acontecido algum problema na entrada de dados, informar ao usuário escrevendo a mensagem na
+tela (sem utilizar uma janela de alerta) e recolocando o foco no campo de entrada.</pre>
+            <div class="questao">
+                <form action="Resposta" method="GET" id="quest2">
+                    <label>Digite um inteiro:</label><br/>
+                    <input type="text" name="inteiro" required>
+                    <input type="text" name="quest" value="3" style="display:none" readonly required>
+                    <input type="submit" value="ok">
+                    <p style="color: red"></p>
+                </form>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Questão 4</legend>
+            <pre>Criar uma página com um campo de texto onde o usuário digitará números separados por vírgula.
+Ao submeter a página ao servidor, retornar outra página que contenha as seguintes informações
+sobre os valores digitados:
+    (a) Média;
+    (b) Mediana;
+    (c) Moda;
+    (d) Maior valor;
+    (e) Menor valor;
+    (f) Fatores primos;
+    (g) Mínimo múltiplo comum;
+    (h) Máximo divisor comum;
+    (i) Se são primos entre si ou não.</pre>
+            <div class="questao">    
+                <form action="Resposta" method="GET">
+                    <label> Digite numeros separados por virgulas</label><br/>
+                    <input type="text" name="numeros" required>                      
+                    <input type="text" name="quest" value="4" style="display:none" readonly>
+                    <input type="submit" value="ok">
+                </form>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Questão 5</legend>
+            <pre>Criar uma página com um campo de texto. Ao submeter a página, o servidor:
+(a) calculará a numerologia do nome completo de uma pessoa. Cada letra possui um código
+obtido através da Tabela Pitagórica, como apresentado abaixo:
+    1 2 3 4 5 6 7 8 9
+    A B C D E F G H I
+    J K L M N O P Q R
+    S T U V W X Y Z
+
+Verifique o valor de cada letra do nome completo e some seus respectivos códigos. Em cada
+soma o resultado deve ser de um dígito de 1 a 9, ou os números 11, 22 e 33. De acordo com
+o exemplo da tabela, o nome João da Silva seria calculado da seguinte forma:
+    a) 1 + 6 + 1 + 6 + 4 + 1 + 1 + 9 + 3 + 4 + 1 = 37
+    b) 3 + 7 = 10
+    c) 1 + 0 = 1
+    O número associado ao nome é 1 (um).
+    (b) informará se é um palíndromo ou não. Um palíndromo é uma palavra, frase ou qualquer
+    outra sequência de unidades que tenha a propriedade de poder ser lida tanto da direita para
+    a esquerda como da esquerda para a direita obtendo-se o mesmo resultado.</pre>
+            <div class="questao">
+                <form action="Resposta" method="GET">
+                    <input type="text" name="nome" required> 
+                    <input type="text" name="quest" value="5" style="display:none" readonly>
+                    <input type="submit" value="ok">
+                </form>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Questão 6</legend>
+            <p>Criar uma página que implemente uma enquete sobre a disciplina favorita dos alunos do 4o período.
+                A página da enquete deve apresentar a lista de disciplinas onde o aluno deverá escolher uma única
+                disciplina. O aluno poderá votar em uma disciplina ou ver o resultado parcial até o momento.
+                Ao votar, uma nova página será aberta com o resultado parcial informando a quantidade total de
+                votos, a quantidade de votos recebida por cada disciplina até o momento, o percentual de votos de
+                cada disciplina e uma barra horizontal indicando graficamente o percentual de votos.</p>
+            <div class="questao">
+                <form action="Resposta" method="GET">
+                    <input type="radio" name="voto" value="mca" id="v1" checked>
+                    <label for="v1">Metodologia Cientifica Aplicada</label><br/>
+                    <input type="radio" name="voto" value="so" id="v2">
+                    <label for="v2">Sistemas Operacionar</label><br/>
+                    <input type="radio" name="voto" value="dw2" id="v3">
+                    <label for="v3">Desenvolvimento Web 2</label><br/>
+                    <input type="radio" name="voto" value="gcm" id="v4">
+                    <label for="v4">Gerencia de Configuracao de Mudanca</label><br/>
+                    <input type="radio" name="voto" value="sd" id="v5">
+                    <label for="v5">Sistemas Distribuidos</label><br/>
+                    <input type="radio" name="voto" value="ppsoo" id="v6">
+                    <label for="v6">Padrões de Projeto Orientado a Objetos</label><br/>
+                    <input type="radio" name="voto" value="pds" id="v7">
+                    <label for="v7">Processos de Desenvolvimento de Software</label><br/>
+                    <input type="text" name="quest" value="6" style="display:none" readonly>
+                    <input type="submit" value="Votar" name="btn">
+                    <input type="submit" value="Resultado Parcial">
+                </form>
+            </div>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Questao 7</legend>
+            <p>Criar uma página para calcular o valor futuro de um investimento baseado no montante inicial,
+taxa de juros mensal, tempo do investimento em meses e aportes mensais. Após receber os dados
+do usuário, criar uma tabela com quatro colunas: tempo, aporte, juros e montante. Para cada
+intervalo de tempo, informar o mês corrente, o valor do aporte, o valor dos juros aplicados ao
+montante e o montante corrente. Na última linha informar a soma de todos os aportes realizados,
+o total de juros obtidos e o valor final do investimento.</p>
+            <div class="questao">
+                <form action="Resposta" method="GET">
+                    <label>Montante inicial: </label><br /> 
+                    <input type="number" name="valInicial" required ><br/><br/>
+                    <label>Taxa de juros mensais: </label><br /> 
+                    <input type="number" name="juros" step="0.01" required><br/><br/>
+                    <label>Tempo em meses: </label><br /> 
+                    <input type="number" name="meses" required ><br/><br/>
+                    <label>Aporte Mensal: </label><br />
+                    <input type="number" name="valMensal" required><br/><br/>
+                    <input type="text" name="quest" value="7"  style="display:none" readonly>
+                    <input type="submit" value="ok">
+                </form>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Questão 8</legend>
+            <pre>Criar uma página que realize o cadastramento das informações de funcionários de uma empresa.
+Cada funcionário será representado pelo nome, data de nascimento e salário. A tela principal deverá
+apresentar uma tabela com as informações de todos os funcionários cadastrados até o momento,
+apresentando uma mensagem caso não existam funcionários cadastrados. Um botão de inserção
+de novos funcionários deve aparecer ao lado do cabeçalho da tabela. Ao clicar neste botão, uma
+página será aberta com as três informações de um funcionário a serem digitadas. Considere as
+seguintes restrições aos dados dos funcionários:
+    a) O nome deve conter, no mínimo, três caracteres;
+    b) Nenhum funcionário pode ter menos que 18 anos ou mais que 70 anos;
+    c) Nenhum funcionário pode ganhar menos que um salário mínimo.
+Caso alguma das restrições não seja satisfeita, uma mensagem deve aparecer ao lado do campo
+com erro. Ao inserir um funcionário, deverá se retornar à página principal. Ao lado do nome da
+cada funcionário, deverão aparecer dois botões: um para alterar e outro para remover o respectivo
+funcionário.</pre>
+            <div class="questao">
+                <form action="Resposta" method="GET">
+                    <label>Nome: </label> 
+                    <input type="text" name="nome" required ><br/><br/>
+                    <label>Data de Nasciemnto: </label> 
+                    <input type="date" name="data" required ><br/><br/>
+                    <label>Salário: </label>  
+                    <input type="number" name="valInicial" required ><br/><br/>
+                    <input type="text" name="quest" value="8" style="display:none" readonly>
+                    <input type="submit" value="ok">
+                </form>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Questão 9</legend>
+            <p>Implementar uma página em JSP que apresente o calendário a partir de um ano especificado pelo
+                usuário.</p><p>Pontuação:</p>
+            <ol>
+                <li>Página implementada, apresentando todos os meses do ano em tabelas.</li>
+                <li>Os domingos e feriados devem estar em vermelho.</li>
+                <li>Criar uma lista de feriados fixos (01/01, 21/04, 01/05, 07/09, etc.) e apresentá-los nos dias
+respectivos juntamente com uma descrição do feriado através do atributo title.</li>
+                <li>Criar uma lista de feriados móveis (carnaval, páscoa e corpus christi) e apresentá-los nos dias
+respectivos juntamente com uma descrição do feriado através do atributo title.</li>
+            </ol>
+            <form action="Resposta" method="GET">
+                <input type="text" name="quest" value="9" style="display:none" readonly>
+                <input type="submit" value="ok">
+            </form>
+        </fieldset>
+        <fieldset>
+            <legend>Questão 10</legend>
+            <p>O conceito de amortização é o processo de extinção de uma dívida através de pagamentos periódi-
+cos, que são realizados em função de um planejamento, de modo que cada prestação corresponde
+
+a soma do reembolso do capital ou dos juros do saldo devedor (juros sempre são calculados sobre
+o saldo devedor), podendo ainda ser o reembolso de ambos.</p>
+            <p>Alguns dos principais sistemas de amortização são:</p>
+            <ul>
+                <li><span class="bolder">Sistema de pagamento único:</span>ocorre um único pagamento (capital + juros) no final do
+período estipulado;</li>
+                <li><span class="bolder">Sistema americano:</span>ocorre um único pagamento ao final do período, porém os juros são
+calculados em várias fases durante o período;</li>
+                <li><span class="bolder">Sistema de amortização constante (SAC):</span>geralmente o mais utilizado, os juros e o
+capital são calculados uma única vez e divididos para o pagamento em várias parcelas durante
+o período;</li>
+                <li><span class="bolder">Sistema price ou francês:</span>geralmente usados em financiamentos de bens de consumo, todas
+as parcelas são iguais e com os juros já embutidos;</li>
+                <li><span class="bolder">Sistema de amortização misto:</span>calcula-se o financiamento pelos métodos SAC e price
+e faz-se uma média aritmética das prestações desses dois sistemas, chegando ao valor da
+prestação do sistema misto.</li>
+            </ul>
+                <p>Criar uma página para implementar os sistemas de amortização apresentados acima, recebendo
+como entrada os seguintes valores: sistema de amortização, valor do financiamento, número de
+meses e taxa de juros. Como saída, deverá ser gerado uma tabela com informações sobre os meses,
+valor dos pagamento efetuados até o momento, valor de juros pagos, amortização do saldo devedor,
+e por fim o saldo devedor. Por fim, mostrar o valor total gasto em cada um dos valores anteriores.
+Um exemplo pode ser obtido em <a href="http://fazaconta.com/amortizacao.htm.">fazaconta</a></p>
+            
+            <form action="Resposta" method="GET">
+                <input type="text" name="quest" value="10" style="display:none" readonly>
+                <input type="submit" value="ok">
+            </form>
+        </fieldset>
+        <fieldset>
+            <legend>Questão 11</legend>
+            <p>Escreva dois RequestWrappers que encapsulam HttpServletRequest e sobrepõem o método getPa-
+                rameter():</p>
+            <ul>
+                <li>Use o primeiro em um filtro chamado UpperCaseFilter, que coloque os valores de todos os
+                    parâmetros em caixa alta.</li>
+                <li>O segundo, ReverseFilter, deve inverter o texto dos parâmetros.</li>
+                <li>Coloque os dois em cascata apontando para um servlet simples.</li>
+            </ul>
+            <form action="Resposta" method="GET">
+                <input type="text" name="quest" value="11" style="display:none" readonly>
+                <input type="submit" value="ok">
+            </form>
+        </fieldset>
+        <script src="script.js"></script>
+    </body>
+</html>

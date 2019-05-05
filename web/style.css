@@ -1,0 +1,114 @@
+/* index.hmtl */
+.questao {
+    background-color: #f1fff7;
+    padding: 10px 15px;
+    border: solid 1px #f1f1f1;
+    border-radius: 5px;
+}
+
+
+/* Quest 1 */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+caption {
+    font-size: 30px;
+    margin: 20px auto 30px auto;
+}
+table {
+    margin: auto;
+    border-collapse: collapse;
+}
+table, th, td {
+  border: 1px solid gray;
+}
+th {
+    background: #f1f1f1;
+}
+th, td {
+    width: 25px;
+    height: 25px;
+    text-align: center;
+}
+/* Quest 2 */
+ol.quest2 {
+    width: fit-content;
+    margin: auto;
+}
+h3.quest2 {
+    text-align: center;
+    margin-top: 50px;
+}
+/* Quest 3 */
+ol.quest3{
+}
+h3.quest3, h4.quest3{
+    text-align: center;
+}
+h4.quest3{
+    color: #904c4c;
+}
+span.quest3{
+    color: #904c4c;
+}
+/* Quest 4 */
+h2.quest4, h6.quest4 {
+    text-align: center;
+    font-family: "Courier New", Courier, monospace;
+}
+h2.quest4 {
+    margin-bottom: 0;
+    margin-top: 60px;
+    letter-spacing: 3px;
+    
+}
+h6.quest4{
+    margin-top: 0;
+    letter-spacing: 2.5px;
+}
+p.quest4, h4.quest4{
+    text-align: center;
+    list-style: inside;
+}
+ul.quest4{
+    width: fit-content;
+    margin: auto;
+}
+
+span.bolder {
+    font-weight: bolder;
+}
+span.red{
+    color: red;
+}
+.border{
+    border: solid 1px black;
+    padding: 7px;
+}
+span.quest4.border {
+    background-color: #f2f2fb;
+}
+/*Quest 6*/
+table.quest6{
+   border-color: white;
+   background-color:#f7f5f9;
+}
+table.quest6 thead{
+    background-color: #ecd9f3
+}
+table.quest6 tbody{
+    ackground-color: #f7f7f7;
+}
+table.quest6 tbody th {
+    background-color: #f2ecf5;
+    text-align: start;
+}
+table.quest6 thead th {
+    background-color: #f2ecf500;
+}
+table.quest6 th, table.quest6 td{
+    width: initial;
+    height: initial;
+    padding: 7px;
+    border-color: white;
+} 
